@@ -1,3 +1,79 @@
-.classe {
-  color: blue;
+$off-black: hsl(0, 0%, 8%);
+$dark-grey: hsl(0, 0%, 12%);
+$grey: hsl(0, 0%, 20%);
+$green: hsl(75, 94%, 57%);
+
+html {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: $off-black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 280px;
+  background-color: $dark-grey;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    border-radius: 50%;
+    width: 100px;
+  }
+
+  > h1 {
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+
+  > .position {
+    color: $green;
+    font-weight: 600;
+  }
+
+  > .profession {
+    margin: 20px 0 20px 0;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  > a {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+    background-color: $grey;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+
+  > a:hover {
+    background-color: $green;
+    color: $grey;
+  }
 }
